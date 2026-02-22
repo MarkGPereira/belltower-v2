@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+ov2/* GLOBAL STYLES */
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
@@ -15,7 +15,7 @@ section {
 }
 /* HERO SECTION */
 .hero {
-  background-image: url('images/estate-front-entrance.png');
+  background-image: url('images/herov2.png');
   background-size: cover;
   background-position: center;
   height: 90vh;
