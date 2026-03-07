@@ -16,14 +16,11 @@ section {
 /* HERO SECTION */
 .hero {
   background-image: url('../images/bell-tower-estate-actual.png');
-  background-size: cover;  /* or "100% auto" if you want to maintain aspect ratio */
-  background-position: center center;
+  background-size: 85%;  /* Start here and adjust up/down */
   background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #FAF8F6;  /* Add a background color to fill empty space */
   height: 90vh;
-  width: 100vw;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
