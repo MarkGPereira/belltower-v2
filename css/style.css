@@ -16,7 +16,7 @@ section {
 /* HERO SECTION */
 .hero {
   background-image: url('../images/bell-tower-estate-actual.png');
-  background-size: 65%;  /* Start here and adjust up/down */
+  background-size: 50%;  /* Start here and adjust up/down */
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #FAF8F6;  /* Add a background color to fill empty space */
