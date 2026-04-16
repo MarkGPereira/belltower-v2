@@ -14,12 +14,15 @@
   <nav id="navbar">
     <div class="nav-inner">
       <a href="#hero" class="nav-logo">Bell Tower Estate</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#grounds">The Grounds</a>
-        <a href="#events">Events</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#grounds" onclick="closeMenu()">The Grounds</a>
+        <a href="#events" onclick="closeMenu()">Events</a>
+        <a href="#gallery" onclick="closeMenu()">Gallery</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
       </div>
     </div>
   </nav>
@@ -192,12 +195,25 @@
     <p>&copy; 2025 Bell Tower Estate &nbsp;·&nbsp; 565 Openaki Road, Denville, NJ 07834</p>
   </footer>
 
-  <!-- Navbar scroll effect -->
+  <!-- Navbar scroll + hamburger -->
   <script>
     const navbar = document.getElementById('navbar');
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.scrollY > 60);
     });
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      navLinks.classList.toggle('open');
+    });
+
+    function closeMenu() {
+      hamburger.classList.remove('open');
+      navLinks.classList.remove('open');
+    }
   </script>
 
 </body>
